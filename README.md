@@ -6,6 +6,10 @@ https://twitter.com/Geoxion/status/1526936058788827141
 
 This is a repro of that report. It **does confirm** that in `panic = "abort"` (at least on embedded), panics WILL recurse, rather than hard-abort on a double-panic.
 
+## The rust issue report:
+
+https://github.com/rust-lang/rust/issues/97146
+
 ## The panic handler:
 
 ```rust
